@@ -19,10 +19,10 @@ app.use(express.static(__dirname + "/public"));
  * We set up the express server.
  * Then tell socketio to use it.
  */
-
+const port = process.env.PORT || 4000;
 const socketio = require("socket.io");
-const expressServer = app.listen(8080, () =>
-  console.log("Server running on port 8080")
+const expressServer = app.listen(port, () =>
+  console.log(`Server running on port ${port}`)
 );
 const io = socketio(expressServer);
 

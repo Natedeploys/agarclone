@@ -1,4 +1,4 @@
-let socket = io.connect("http://localhost:8080");
+let socket = io.connect("https://space-agar-io.herokuapp.com/");
 
 /**
  * Gets called when player presses start game button
