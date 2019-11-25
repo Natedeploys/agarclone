@@ -1,4 +1,5 @@
-let socket = io.connect("http://localhost:80");
+// let socket = io.connect("http://localhost:80");
+let socket = io();
 
 /**
  * Gets called when player presses start game button
